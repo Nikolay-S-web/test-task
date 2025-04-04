@@ -1,0 +1,137 @@
+.footer {
+  display: flex;
+  align-items: center;
+  background: $footer-bg-color;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.2em;
+  color: $text-second-color;
+
+  &__wrapper {
+    @extend %container;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 30% 40% 30%;
+    align-items: center;
+  }
+
+  &__copyright {
+    padding-left: 5px;
+  }
+
+  &-list {
+    display: flex;
+    justify-content: center;
+    gap: 36px;
+
+    &:last-child {
+      justify-self: end;
+      gap: 46px;
+    }
+
+    &--payments {
+      color: $notice-color;
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: inherit;
+    transition: 0.5s;
+
+    &:hover {
+      color: $accent-color;
+      transform: scale(1.1);
+    }
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .footer {
+    &-list {
+      &--borderd {
+        &::before,
+        &::after {
+          content: '';
+          left: 0;
+          width: 1px;
+          height: 18px;
+          background-color: $footer-separator-color;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .footer {
+    font-size: 9px;
+
+    &__wrapper {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
+    &-list {
+      justify-content: space-around;
+      gap: unset;
+
+      &:last-child {
+        justify-self: unset;
+        gap: unset;
+      }
+    }
+
+    &__link {
+      gap: 5px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    font-size: 11px;
+
+    &__wrapper {
+      grid-template-columns: unset;
+      grid-auto-flow: row;
+      justify-items: center;
+      gap: 15px;
+    }
+
+    &__list {
+      min-width: 60%;
+    }
+
+    &-list {
+      justify-content: space-around;
+
+      &__item {
+        padding: 5px;
+        gap: 5px;
+      }
+    }
+
+    &__item {
+      justify-content: end;
+      gap: 12px;
+    }
+
+    &__link {
+      align-items: center;
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+}

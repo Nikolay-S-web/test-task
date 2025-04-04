@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  font-family: $primary-font-family, sans-serif;
+  color: $text-primary-color;
+  background-color: $body-bg-color;
+
+  &::-webkit-scrollbar {
+    width: 7px;
+    background: $scrollbar-bg-color;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    width: 7px;
+    background: $scrollbar-thumb-color;
+    border-radius: 10px;
+  }
+}

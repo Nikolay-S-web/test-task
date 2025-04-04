@@ -1,0 +1,17 @@
+{
+  "name": "test-task-employcity",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "N. Senchenko",
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "sass-embedded": "^1.86.3",
+    "vite": "^6.2.0"
+  }
+}

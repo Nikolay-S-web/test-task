@@ -1,0 +1,63 @@
+$white: #ffffff;
+$black: #000000;
+$blue: #3e9cdc;
+$dark-blue: #286690;
+$light-blue: #43abf0;
+$gray: #6f6d7b;
+$light-gray: #bbbbbb;
+$darker-gray: #3d4050;
+$dark-gray: #272733;
+$black-gray: #2a2b30;
+
+$header-bg: #10101de5;
+$body-bg-color: $dark-gray;
+$footer-bg-color: $darker-gray;
+$footer-separator-color: $light-gray;
+
+$scrollbar-bg-color: $darker-gray;
+$scrollbar-thumb-color: $blue;
+
+$text-primary-color: $black;
+$text-second-color: $white;
+$accent-color: $blue;
+
+$navigation__link--active: $light-blue;
+
+$notice-color: $light-gray;
+
+$button-primary-text-color: $black-gray;
+$button-primary-bg-color: $white;
+$button-primary-border-color: $gray;
+$button-accent-text-color: $white;
+$button-accent-bg-color: $blue;
+$button-accent-border-color: $white;
+
+$stage-icon-bg-color: $blue;
+$stage-icon-border-color: $dark-blue;
+
+$form-placeholder-color: $dark-gray;
+$input-bg-color: #ffffffd9;
+$input-border-color: #dfdfe0;
+$select-list-bg-color: $darker-gray;
+
+
+$primary-font-family: 'Lato', sans-serif;
+
+%container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1210px;
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 650px) {
+  %container {
+    padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  %container {
+    padding: 0 10px;
+  }
+}
